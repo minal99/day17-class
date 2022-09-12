@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align-last: left;
+}
+.main_container{
+    max-width: 1024px;
+    margin: auto;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: '';
+    float: both;
+    display: block;
+}
+body,h1,h2,h3,h4,h5,a,p,span{
+   font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* HEADER SECTION START-----------------------> */
+.header-section{
+    background-color: black;
+    height: 90px;
+}
+.header-section::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.logo{
+    width: 50%;
+}
+.logo img{
+    width: 100px;
+    margin: 13px 0;
+}
+.nav{
+    width: 50%;
+}
+.menu{
+    list-style: none;
+}
+.menu li{
+    display: inline-block;
+    padding: 14px 17px;
+    line-height: 60px;
+}
+.menu li a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: .4s;
+}
+.menu li:hover>a{
+    color: rgb(25, 175, 151);
+}
+.icon{
+    font-size: 24px;
+}
+/* header dropdown menu */
+.menu li{
+    position: relative;
+    
+}
+.menu li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    width: 230px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+    transform-origin: top center;
+}
+.menu li ul li{
+    padding: 0px;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+.menu li:hover>ul{
+    opacity: 1;
+    visibility: visible;
+    
+}
+/* HEADER SECTION END////////////////////////// */
+/* BACKGROUND SECTION CSS START---------------> */
+
+.background_content {
+    width: 800px;
+    height: 200px;
+    color: white;
+}
+.background_img {
+    background-image: url(./images/background.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+}
+.main_hero {
+    text-transform: uppercase;
+    font-size: 44px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(34, 49, 39);
+    font-weight: 800;
+}
+
+.background_content h3 {
+    padding: 20px 0;
+    color:black;
+    font-size: 20px;
+}
+
+.background_content a {
+    text-decoration: none;
+    padding: 22px 45px;
+    display: inline-block;
+    font-family: arial;
+    border-radius: 15px;
+    transition: .5s;
+    font-weight: 600;
+    border: 1px solid white;
+}
+.black_btn{
+    background-color: black;
+    color: white;
+}
+.white_btn{
+    background-color: white;
+    color: black;
+}
+.black_btn:hover{
+    background-color: rgb(0, 188, 156);
+    border: 1px solid black;
+}
+.white_btn:hover{
+    background-color: rgb(0, 188, 156);
+    color: white;
+    border: 1px solid white;
+}
+
+
+/* BACKGROUND SECTION CSS END ////////////////> */
+/* ABOUT SECTION START------------------------> */
+.about_section{
+    padding: 60px 0;
+    background-color: rgb(135, 164, 113);
+    color:#fff;
+}
+.about_content{
+    display: block;
+}
+.main_container h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-shadow: 2px 0px 5px white;
+}
+.about_hero h2::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 70%;
+    left: 0;
+    background-color: white;
+}
+.about_text {
+    width: 600px;
+    display: inline-block;
+    padding: 60px 0px;
+    padding-bottom: 80px;
+}
+.image {
+    width: 300px;
+    display: inline-block;
+}
+/* ABOUT SECTION END////////////////////////////// */
+/* WORK SECTION START----------------------------> */
+.work-section{
+    background-color: rgb(96, 106, 100);
+    padding: 50px 0;
+}
+.work_text{
+    color: white;
+    width: 800px;
+    margin: auto;
+}
+.work_hero_header{
+    font-size: 50px;
+    color: rgb(232, 223, 218);
+    text-shadow: 2px 0 5px white;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 25px;
+}
+.work_hero_header::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 70%;
+    left: 0;
+    background-color: white;
+}
+.box1{
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    text-align: left;
+    display: inline-block;
+    padding: 22px;
+    border-radius: 20px;
+    margin: 0 50px;
+}
+.card_icon{
+    height: 100%;
+    width: 60px;
+    margin-right: 18px;
+}
+.box1 h3{
+    padding: 10px 0;
+    font-size: 22px;
+    color: rgb(70, 97, 126);
+}
+.box1 p{
+    line-height: 22px;
+    color: rgb(70, 97, 126);
+}
+.work-h3{
+    font-size: 30px;
+}
+.work-p{
+    padding: 30px 0 50px 0;
+}
+/* WORK SECTION END/////////////////////////////// */
+/* PRODUCT SECTION START------------------------> */
+
+.product_section{
+    background-color: rgb(135, 164, 113);
+    padding: 80px 0;
+    color:#fff;
+}
+.pcard1 p {
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(77, 103, 134);
+    font-weight: 600;
+}
+.pcard1{
+    width: 550px;
+    height: 450px;
+    border: 1px solid;
+    display: inline-block;
+    margin: 0 8px;
+}
+.pcard1 img{
+    width: 100%;
+   
+}
+.product_hero{
+    padding-bottom: 40px;
+}
+.product_hero p{
+    padding: 20px 0;
+}
+.pro_header{
+    font-size: 40px;
+
+}
+.product_img{
+    margin-top: 20px;
+}
+.product_img img {
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    margin: 15px;
+}
+/* PRODUCT SECTION END/////////////////////////// */
+/* MY TEAM SECTION START------------------------> */
+.myteam_section{
+    background-color: rgb(91, 151, 118);
+    padding: 50px 0;
+    color: #fff;
+}
+.myteam_header {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+.myteam_header::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 65%;
+    left: 70px;
+    background-color: white;
+}
+
+.members_card{
+    width: 350px;
+    height: 400px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.members_card img{
+    width: 100%;
+}
+.social_icon{
+    font-size: 30px;
+}
+.social_icon i{
+    padding: 10px;
+}
+
+/* MY TEAM SECTION END ////////////////////////// */
+/* QUESTION SECTION START------------------------> */
+.question_section{
+    padding: 90px 0;
+    background-color: rgb(96, 106, 100);
+    color: white;
+}
+h2.que_hero {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.que_texts{
+    width: 600px;
+    margin: auto;
+}
+.que_texts p{
+    padding-bottom: 20px;
+}
+.que_btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: white;
+    background: rgb(0, 188, 156);
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: small;
+    transition: .3s;
+}
+.que_btn:hover{
+    background-color: white;
+    color: rgb(0, 188, 156);
+}
+/* QUESTION SECTION END ////////////////////////// */
+/* footer section css  */
+.footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+.footer h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
